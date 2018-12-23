@@ -18,9 +18,9 @@
         <section>
             <article  class="ctc">
                 <header>
-                    <h2>1. Copy to clipboard</h2>
+                    <h2 onclick="toggle(t)">1. Copy to clipboard</h2>
                 </header>
-                <div class="article-body">
+                <div class="article-body" id="t">
                     <textarea id="textToCopy" rows="6" cols="60">
 Enter a text to be copied
                     </textarea>
@@ -35,8 +35,7 @@ Enter a text to be copied
     &#x3C;button class=&#x22;btn&#x22; onclick=&#x22;copy()&#x22;&#x3E;Click to copy&#x3C;/button&#x3E;         
 </pre>
                     </div>
-                </div>
-                    <h3>Javascript</h3>
+                    <h3 >Javascript</h3>
                     <div class="html">
                         <pre>
     function copy() {
@@ -48,10 +47,12 @@ Enter a text to be copied
                         </pre>
                     </div>
                 </div>
+                </div>
             </article>
         </section>
     </main>
     <script src="script/copyToClipboard.js"></script>
+    <script src="script/toggle.js"></script>
 </body>
 
 </html>
