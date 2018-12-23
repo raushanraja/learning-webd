@@ -1,3 +1,78 @@
+@media only screen and (max-width: 600px) {
+    .main-content{
+        min-width: 100%;
+    }
+  }
+
 body{
-    background-color:#fdee4a 
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.page-header {
+
+    padding: 4rem 5rem;
+    text-align: center;
+    background-color: #159957;
+    background-image: linear-gradient(120deg, #155799, #159957);
+
+}
+.project-name{
+    color: #fff;
+    font-size: 3.25rem;
+    margin-bottom: -10px;;
+}
+
+.project-tagline{
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: normal;
+    opacity: .7;
+}
+
+/* heading changes */
+
+h1,h2,h3,h4,h5,h6{
+    color: #189A59;
+}
+
+
+/* main-content */
+.main-content{
+    max-width: 60%;
+    margin: 0px auto;
+}
+
+
+/* section */
+section{
+    padding-top:.2rem;
+    padding-bottom:.2rem;
+}
+
+textarea{
+    display: block
+}
+
+.btn{
+    background: #159957;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+
+.html{font-size: .9rem;
+    border: 2px solid #eee;
+    margin-top: 1rem;
+    border-radius: 15px;
+    border-left-color: #15976c;
+    border-left-width: 5px;
+    min-width: 580px;
+    max-width: 580px;;
+
 }
