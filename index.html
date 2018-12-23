@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,50 @@
     <title>Learning-Webd</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="page-header">
-        <h1 class="project-name">Learning HTML</h1>
-        <h2 class="project-tagline">Created by Raushan Rajaa</h2>
+        <h1 class="project-name">Learning Web Developement</h1>
+        <h2 class="project-tagline">Raushan Raja</h2>
     </header>
-    <main>
+    <main class="main-content">
+        <section>
+            <article  class="ctc">
+                <header>
+                    <h2>1. Copy to clipboard</h2>
+                </header>
+                <div class="article-body">
+                    <textarea id="textToCopy" rows="6" cols="60">
+Enter a text to be copied
+                    </textarea>
+                    <button class="btn" onclick="copy()">Click to copy</button>
+                    <h3>HTML</h3>
+                    <div class="html">
+                        <pre>
+    &#x3C;textarea id=&#x22;textToCopy&#x22; rows=&#x22;6&#x22; cols=&#x22;60&#x22;&#x3E;
+        Enter a text to be copied
+    &#x3C;/textarea&#x3E;
 
+    &#x3C;button class=&#x22;btn&#x22; onclick=&#x22;copy()&#x22;&#x3E;Click to copy&#x3C;/button&#x3E;         
+</pre>
+                    </div>
+                </div>
+                    <h3>Javascript</h3>
+                    <div class="html">
+                        <pre>
+    function copy() {
+        var copyText = document.getElementById("textToCopy");
+        copyText.select();
+        document.execCommand("copy");
+        alert("Copied text:\n"+copyText.value)
+    }      
+                        </pre>
+                    </div>
+                </div>
+            </article>
+        </section>
     </main>
+    <script src="script/copyToClipboard.js"></script>
 </body>
+
 </html>
