@@ -16,35 +16,54 @@
     </header>
     <main class="main-content">
         <section>
-            <article  class="ctc">
+            <article  id="ctc">
                 <header>
                     <h2 onclick="toggle(t)">1. Copy to clipboard</h2>
                 </header>
                 <div class="article-body" id="t">
-                    <textarea id="textToCopy" rows="6" cols="60">
-Enter a text to be copied
-                    </textarea>
-                    <button class="btn" onclick="copy()">Click to copy</button>
+                        <div id=example1>
+                        <h3>Example:</h3>
+                        <p id="textToCopy">This is the text to be copied</p>
+<button class="btn" onclick="copy('textToCopy')">Click to copy the text</button>
+                    </div>
+                    <div class="textArea">
+                            <h3>Paste to check</h3>
+                        <textarea id="textToCopy" rows="6" cols="20" placeholder="paste to confirm"></textarea>
+                        </div>
                     <h3>HTML</h3>
                     <div class="html">
-                        <pre>
-    &#x3C;textarea id=&#x22;textToCopy&#x22; rows=&#x22;6&#x22; cols=&#x22;60&#x22;&#x3E;
-        Enter a text to be copied
-    &#x3C;/textarea&#x3E;
-
-    &#x3C;button class=&#x22;btn&#x22; onclick=&#x22;copy()&#x22;&#x3E;Click to copy&#x3C;/button&#x3E;         
+                        <pre id="cpHTML">
+    &#x3C;p id=&#x22;textToCopy&#x22;&#x3E;This is the text to be copied&#x3C;/p&#x3E;
+    &#x3C;button class=&#x22;btn&#x22; onclick=&#x22;copy(&#x27;textToCopy&#x27;)&#x22;&#x3E;Click to copy the text&#x3C;/button&#x3E;
 </pre>
+<button class="btn" onclick="copy('cpHTML')">Click to copy</button>
                     </div>
                     <h3 >Javascript</h3>
                     <div class="html">
-                        <pre>
-    function copy() {
+                        <pre id="cpJS">
+// when copying from input or textarea elements only 
+    function copyIn() {
         var copyText = document.getElementById("textToCopy");
         copyText.select();
         document.execCommand("copy");
-        alert("Copied text:\n"+copyText.value)
-    }      
+      } 
+
+// when copyig from other than input or textarea element
+      function copy(element) {
+        var v = document.getElementById(element);
+        var newInput = document.createElement('input');
+          newInput.value = v.innerText;
+          newInput.id="cp";
+          newInput.setAttribute('readonly', '');
+          newInput.style.position = 'absolute';
+          newInput.style.left = '-9999px';
+          v.parentNode.insertBefore(newInput, v.nextSibling);
+          newInput.select();
+          document.execCommand("copy");
+        newInput.parentNode.removeChild(newInput);
+      }
                         </pre>
+<button class="btn" onclick="copy('cpJS')">Click to copy</button>
                     </div>
                 </div>
                 </div>
