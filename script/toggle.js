@@ -1,5 +1,5 @@
 function toggle(e) {
-    if (e.style.display === "none") {
+    if (getComputedStyle(document.getElementById('t')).display === "none") {
         e.style.display = "block"
     } else {
         e.style.display = "none"
