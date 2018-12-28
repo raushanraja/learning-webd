@@ -511,7 +511,12 @@ texarea{
     border: 1px solid #15976c5b;
     padding:2rem;
     border-radius: 10px;
+    display:none;
 
 }
 
+a{
+  color: #189A59;
+    text-decoration: #6a849e3a underline;
+}
 
