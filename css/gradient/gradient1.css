@@ -1,0 +1,12 @@
+#gradientOne{
+    background:linear-gradient(
+    45deg, 
+    #ED9121 0%,
+    #ED9121 23%,
+    #56A0D3 20%,
+    #56A0D3 77%,
+    rgb(91, 237, 100) 77%
+    ) ;
+}
+
+
