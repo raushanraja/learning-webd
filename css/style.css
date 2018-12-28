@@ -511,7 +511,16 @@ texarea{
     border: 1px solid #15976c5b;
     padding:2rem;
     border-radius: 10px;
+    display: none;
 
 }
 
 
+a,a:visited{
+ color: #189A59;
+ text-decoration: none;
+}
+
+a:hover,a:focus{
+  opacity: .7;
+}
