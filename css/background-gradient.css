@@ -27,3 +27,8 @@ a:hover, a:focus{
 .artilce-text:nth-child(2){
     overflow-x: scroll;
 }
+
+a,a:visited{
+    color: white;
+    text-decoration: none;
+}
