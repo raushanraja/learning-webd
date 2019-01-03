@@ -526,7 +526,7 @@ texarea{
     border: 1px solid #000;
 }
 
-#t{
+#t, #gulpfile{
     border: 1px solid #15976c5b;
     padding:2rem;
     border-radius: 10px;
