@@ -409,7 +409,7 @@
       margin-left: 20px;
     }
 
-    .article-body{
+    #t,{
       padding: 1px;
     }
   }
@@ -530,7 +530,7 @@ texarea{
     border: 1px solid #000;
 }
 
-#t, #gulpfile{
+.article-body{
     border: 1px solid #15976c5b;
     padding:2rem;
     border-radius: 10px;
