@@ -409,8 +409,8 @@
       margin-left: 20px;
     }
 
-    #t,{
-      padding: 1px;
+    .article-body{
+      padding: 1rem;
     }
   }
 
