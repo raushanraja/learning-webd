@@ -408,6 +408,10 @@
     main h2{
       margin-left: 20px;
     }
+
+    .article-body{
+      padding: 1px;
+    }
   }
 
   @media screen and (device-height:1448px) and (device-width: 1072px) {
