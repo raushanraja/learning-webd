@@ -32,3 +32,8 @@ a,a:visited{
     color: white;
     text-decoration: none;
 }
+
+.article-body{
+    display: block;
+
+}
