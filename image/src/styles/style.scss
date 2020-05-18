@@ -6,6 +6,7 @@ $text-article-meta: #7a7a7a;
 $text-article-title: #363636;
 $text-article-paragraph: #4a4a4a;
 $link-hover: #2160c4;
+
 @mixin card-design {
   background-color: $white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05), 0 0 1px rgba(0, 0, 0, 0.1);
@@ -24,6 +25,10 @@ $link-hover: #2160c4;
   font-family: "Ubuntu", sans-serif;
 }
 
+html {
+  overflow-y: hidden;
+}
+
 #gatsby-focus-wrapper {
   height: 100vh !important;
   display: flex !important;
@@ -34,7 +39,6 @@ $link-hover: #2160c4;
 
 main {
   flex-grow: 1;
-  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -76,10 +80,22 @@ main {
     width: 100%;
     margin: 0 auto;
     padding: 0 1em;
-    max-width: 750px;
+    max-width: 1000px;
 
     article {
       width: 100%;
+    }
+  }
+
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.6em;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
     }
   }
 }

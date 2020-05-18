@@ -1,6 +1,5 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React, { useState } from "react"
+import React from "react"
 
 
 function Header({ siteTitle }) {
@@ -12,7 +11,7 @@ function Header({ siteTitle }) {
       <div className="header-right">
         <nav className="site-navigation">
           <ul>
-            <li> snippets</li>
+            <li> Add Link Here</li>
           </ul>
         </nav>
         
