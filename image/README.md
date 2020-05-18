@@ -1,37 +1,42 @@
-### Gatsy-image-example
+#### Gatsby Starter
 
-### Required Plugins:
-+ gatsby-image
-+ gatsby-transformer-sharp
-+ gatsby-plugin-sharp
-
-
-### Install Plugins:
-+ `npm install --save gatsby-image gatsby-transformer-sharp gatsby-plugin-sharp`
-
-### Add Plugins to `gatsby-config.js`
-+ plugins: [`gatsby-transformer-sharp`, `gatsby-plugin-sharp`]
-
-### Setup `gatsby-source-filesystem` to make images available in `graphql`
-```js
-const path = require(`path`)
-
-module.exports = {
-  plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: path.join(__dirname, `src`, `images`),
-      },
-    },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-  ],
-}```
+#### Configured
++ Markdown Pages to HTML
++ SCSS/SASS
++ Gatsby-image
++ Code highlighting using prismjs
++ Google analystics
++ SEO using helmet
 
 
-### Scss Support
-+ installplugins as: `npm install node-sass gatsby-plugin-sass`
-+ Add this to `gatsby-config.js`: plugins: `` [`gatsby-plugin-sass`] ``
-+ import custom.scss to index.js
+#### Important Directories
+```
+content
+├── assets     
+│   ├── images
+│   
+└── blog
+    ├── post.md
+    ├── my-second-post
+    └── post2.md
+
+```
+
+>images can be access by giving relative directory as:  `assets/images/` Example: `assets/images/image1.jpg`
+
+
+#### Plugins:
++ `gatsby-transformer-sharp`
++ `gatsby-plugin-sharp`
++ `gatsby-plugin-sass`
++ `gatsby-transformer-remark`
++ `gatsby-remark-images`
++ `gatsby-remark-responsive-iframe`
++ `gatsby-remark-prismjs`
++ `gatsby-remark-copy-linked-files`
++ `gatsby-remark-smartypants`
++ `gatsby-plugin-google-analytics`
++ `gatsby-plugin-feed`
++ `gatsby-plugin-manifest`
++ `gatsby-plugin-react-helmet`
++ `gatsby-plugin-typography`

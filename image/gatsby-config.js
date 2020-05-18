@@ -57,7 +57,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
