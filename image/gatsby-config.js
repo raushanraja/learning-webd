@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Gatsby Image Example`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Raushan Raja`,
+      summary: `Load images using gatsby-image`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `A starter blog demonstrating what Gatsby Images can do.`,
+    siteUrl: ``,
     social: {
-      twitter: `kylemathews`,
+      twitter: `raushanraja13`,
     },
   },
   plugins: [
@@ -26,6 +26,7 @@ module.exports = {
         name: `assets`,
       },
     },
+    `gatsby-transformer-sharp`, `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
