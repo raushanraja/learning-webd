@@ -6,7 +6,7 @@ module.exports = {
       summary: `Load images using gatsby-image`,
     },
     description: `A starter blog demonstrating what Gatsby Images can do.`,
-    siteUrl: ``,
+    siteUrl: `https://hexweb.in`,
     social: {
       twitter: `raushanraja13`,
     },
@@ -22,17 +22,17 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
+        path: `${__dirname}/content/`,
+        name: `content`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path:`${__dirname}/content/assets`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `images`,
+    //     path:`${__dirname}/content/assets`,
+    //   },
+    // },
     `gatsby-transformer-sharp`, `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
