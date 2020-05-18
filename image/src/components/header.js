@@ -1,7 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
-import SearchContainer from './search/search'
 
 
 function Header({ siteTitle }) {
@@ -16,7 +15,7 @@ function Header({ siteTitle }) {
             <li> snippets</li>
           </ul>
         </nav>
-        <SearchContainer/>
+        
       </div>
     </header>
   );

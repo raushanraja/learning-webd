@@ -34,6 +34,7 @@ module.exports = {
     //   },
     // },
     `gatsby-transformer-sharp`, `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -56,8 +57,7 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
