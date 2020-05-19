@@ -1,0 +1,19 @@
+backend:
+  name: github
+  branch: gatsby-netlify
+  repo: raushanraja/learning-webd
+  
+media_folder: content/assets/images
+public_folder: images
+  
+collections:
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
