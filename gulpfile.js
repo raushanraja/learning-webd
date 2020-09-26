@@ -14,7 +14,7 @@ function bSC(done) {
     },
     port: 3000,
     injectChanges:true,
-    watch:false,
+    watch:true,
     plugins: [
       {
           module: "bs-html-injector",
@@ -29,7 +29,7 @@ function bSC(done) {
 
 
 function pugTask() {
-  return src("./pug/**/*.pug")
+  return src("./pug/*.pug")
     .pipe(pug({ doctype: "html", pretty: true }))
     .pipe(dest("./dist/"))
 }

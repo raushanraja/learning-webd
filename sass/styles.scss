@@ -1,0 +1,11 @@
+.overflow-example{
+    .container{
+        height: max(200px,100%);
+        border: 1px solid salmon;
+        overflow-y: scroll;
+
+        .text-container{
+            margin: 10px;
+        }
+    }
+}
