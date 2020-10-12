@@ -1,8 +1,4 @@
-.overflow-example .container {
-  border: 1px solid salmon;
-  overflow-y: scroll;
-}
-
-.overflow-example .container .text-container {
-  margin: 10px;
+body {
+  margin: 0;
+  padding: 0;
 }

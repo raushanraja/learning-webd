@@ -1,4 +1,4 @@
-let { src, dest, parallel, watch } = require("gulp");
+let { src, dest, parallel, watch,series } = require("gulp");
 let sass = require("gulp-sass");
 let pug = require("gulp-pug");
 let browserSync = require('browser-sync').create();
@@ -31,7 +31,7 @@ function bSC(done) {
 function pugTask() {
   return src("./pug/*.pug")
     .pipe(pug({ doctype: "html", pretty: true }))
-    .pipe(dest("./dist/"))
+    .pipe(dest("./dist/"));
 }
 
 // CSS task
@@ -44,6 +44,8 @@ function css() {
 
 
 function main(){
+  pugTask();
+  css();
   watch('./sass/**',css)
   watch('./pug/**',pugTask)
   // watch("./dist/*.html").on('change',browserSyncReload);
